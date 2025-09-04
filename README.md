@@ -11,4 +11,4 @@ The method achieves:
   
   2. Component-wise convergence guarantees unavailable for standard BART
   
-  3. Flexible Bayesian modeling of main and interaction effects
+  3. Interpretability based on the estimated components
