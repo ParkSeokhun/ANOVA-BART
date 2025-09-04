@@ -1,0 +1,36 @@
+experiment_name : 'first_experiment1'
+alpha : 0.95
+beta : 2.
+var_height : 1.
+max_depth : 4
+
+# hyperparameter
+b_hyperparam1 : -1
+b_hyperparam2 : 1
+gamma_shape : 1
+gamma_scale : 1
+inv_gamma_nu : 1
+inv_gamma_lambda : 1
+p_z : 0.5
+
+grow_prob : 0.28
+prune_prob : 0.28
+change_prob : 0.44
+use_candidate_split_val : True
+init_tree_from_prior : False
+init_z_from_prior : False
+
+num_samples : 5000
+max_ensembles : 200
+
+c_star : 0.01
+
+# data
+data_path : 'boston.csv'
+y_variable_name : 'target'
+
+do_inference : True
+log_all : True
+
+y_mean : 0.0
+y_std : 0.0
