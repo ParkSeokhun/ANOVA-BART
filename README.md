@@ -1,6 +1,6 @@
 Official implementation of "Bayesian Additive Regression Trees for functional ANOVA model"
 
-Paper link : [Bayesian Additive Regression Trees for Functional ANOVA](https://arxiv.org/pdf/2509.03317)
+Paper link : [Bayesian Additive Regression Trees for functional ANOVA model](https://arxiv.org/pdf/2509.03317)
 
 Overview
 
