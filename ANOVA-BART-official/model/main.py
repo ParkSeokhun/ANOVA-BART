@@ -236,12 +236,14 @@ def main(data: np.ndarray, y: np.ndarray, config: dict, test_data: np.ndarray, t
 #     return inference_rmse
     
     
-def predict(new_data: np.ndarray, config: dict, model: list[list[BPTREE]]):
+def predict(new_data: np.ndarray, config: dict, model: list[list[BPTREE]], zs: list[np.ndarray]):
+    assert len(model) == len(zs)
     result = np.zeros((new_data.shape[0],))
-    for trees in model:         # trees: list[BPTREE]
+    for z, trees in zip(zs, model):         # trees: list[BPTREE], zs: list[np.ndarray]
         res = np.zeros((new_data.shape[0],))
-        for tree in trees:      # tree : BPTREE
-            res += tree.forward(new_data)
+        for zi, tree in zip(z, trees):      # tree : BPTREE, z : np.ndarray
+            if zi :
+                res += tree.forward(new_data)
         result = np.column_stack((result, res))
     result = result[:, 1:]
     result = np.mean(result, axis = 1)*config["y_std"] + config["y_mean"]
