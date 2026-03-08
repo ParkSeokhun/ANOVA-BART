@@ -1,0 +1,44 @@
+y_dist : 'normal'
+
+nui :
+  sigma2 : 1.
+  inv_gamma_nu : 10.
+  q_lambda : 0.95
+
+# hyperparameter
+b_hyperparam1 : 0
+b_hyperparam2 : 1
+c_star : 0.01
+var_height : 0.1
+
+# model config
+max_depth : 3
+num_samples : 2000
+T_max : 200
+
+# data
+data_path : './data'
+dataset_name : 'abalone'
+log_dir : './parameters'
+fold : 0
+
+# update
+alpha : 0.95
+beta : 2.
+grow_prob : 0.28
+prune_prob : 0.28
+change_prob : 0.44
+step_size : 0.01
+leapfrog_L : 1
+M : 1.
+data_driven_sparsity : True
+
+# etc
+init_from_prior : False
+tpnn_detail_log : False
+seed : 42
+
+
+weight_update : True
+b_update : False
+split_value_q : 1.0

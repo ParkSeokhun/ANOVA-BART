@@ -1,0 +1,43 @@
+y_dist : 'ber'
+
+nui : 0.
+
+# hyperparameter
+b_hyperparam1 : 0
+b_hyperparam2 : 1
+c_star : 0.01
+const_var : 0.01  # 0.1
+var_height : 0.1
+
+# model config
+max_depth : 3
+num_samples : 10000
+T_max : 200
+
+# data
+data_path : './data'
+dataset_name : 'madelon'
+log_dir : './parameters'
+fold : 0
+
+# update
+alpha : 0.95
+beta : 2.
+grow_prob : 0.28
+prune_prob : 0.28
+change_prob : 0.44
+step_size : 0.01
+leapfrog_L : 1
+const_step_size : 0.001  # 0.01
+M : 1.
+data_driven_sparsity : True
+
+# etc
+init_from_prior : False
+tpnn_detail_log : False
+seed : 1
+
+
+weight_update : True
+b_update : False
+split_value_q : 1.0
